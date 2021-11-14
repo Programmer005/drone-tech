@@ -1,0 +1,172 @@
+.sect_one {
+  display: flex;
+  justify-content: center;
+  background-size: 100vh, 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/sect-one-bg.jpg");
+  background-blend-mode: luminosity;
+}
+
+.wrapper {
+  margin-top: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 100%;
+}
+
+.sect_header {
+  padding: 2.75rem;
+  margin: 3.5rem;
+  max-height: 25vh;
+}
+
+.sect_header h1 {
+  font-size: 4rem;
+  margin: 0 0.5rem;
+}
+
+.sect_one h2 {
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+  font-family: var(--scr-fnt);
+}
+
+.sect_one button {
+  margin: 3.1rem 0.5rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--acc-teal);
+  font-family: var(--scr-fnt);
+  font-size: 1.15rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 250ms, background 250ms;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.sect_header button:hover,
+.sect_header button:focus {
+  background: linear-gradient(
+    120deg,
+    var(--acc-teal) 50%,
+    var(--acc-green) 50%
+  );
+  color: white;
+  transform: scale(1.2);
+  border: 1px transparent;
+}
+
+.sect_two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/drone-two-sect.png");
+  background-blend-mode: luminosity;
+  background-size: 100vw 80vh;
+}
+
+.half_part {
+  padding: 2rem;
+}
+
+.right_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right_part span {
+  font-family: var(--scr-fnt);
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+.header_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.third_sect {
+  background: linear-gradient(120deg, var(--acc-teal), var(--acc-green));
+  color: var(--acc-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fourth_sect {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3.5rem;
+  background: var(--acc-lgre);
+  color: #152b27;
+}
+
+.home_sect_two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/drone-home-2.jpg");
+  background-blend-mode: luminosity;
+  background-size: 100vw 100vh;
+}
+
+.home_sect_two h1 {
+  margin: 2rem 0;
+}
+
+.home_sect_two article {
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+.home_sect_three {
+  background: linear-gradient(to right, var(--acc-green), var(--acc-teal));
+}
+
+.home_sect_three details {
+  min-width: 35vw;
+}
+
+.types_drones {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .wrapper > * {
+    margin: 1rem 0.5rem;
+  }
+
+  .wrapper h1,
+  .wrapper h4 {
+    margin: 1.5rem 0.5rem;
+  }
+
+  .sect_one {
+    background-size: cover;
+    min-height: 150vh;
+  }
+
+  .sect_two {
+    flex-direction: column;
+  }
+
+  .third_sect {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fourth_sect {
+    flex-direction: column-reverse;
+  }
+}
